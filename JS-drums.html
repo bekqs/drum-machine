@@ -1,0 +1,105 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>JavaScript Drum Machine</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="head">
+        <h1>JavaScript Drum Machine</h1>
+    </div>
+    <div class="keys">
+        <div class="key blue" data-key="72">
+            <kbd>H</kbd><br>
+            <span class="sample">Ride</span>
+        </div>
+        <div class="key blue" data-key="74">
+            <kbd>J</kbd><br>
+            <span class="sample">Stick</span>
+        </div>
+        <div class="key blue" data-key="75">
+            <kbd>K</kbd><br>
+            <span class="sample">Sample 1</span>
+        </div>
+        <div class="key blue" data-key="76">
+            <kbd>L</kbd><br>
+            <span class="sample">Sample 2</span>
+        </div><br><!-- H-L -->
+        <div class="key purple" data-key="83">
+            <kbd>S</kbd><br>
+            <span class="sample">Maracas</span>
+        </div>
+        <div class="key purple" data-key="68">
+            <kbd>D</kbd><br>
+            <span class="sample">Hihat Open</span>
+        </div>
+        <div class="key purple" data-key="70">
+            <kbd>F</kbd><br>
+            <span class="sample">Conga</span>
+        </div>
+        <div class="key purple" data-key="71">
+            <kbd>G</kbd><br>
+            <span class="sample">Cowbell</span>
+        </div><br><!-- S-G -->
+        <div class="key green" data-key="66">
+            <kbd>B</kbd><br>
+            <span class="sample">Clave</span>
+        </div>
+        <div class="key green" data-key="78">
+            <kbd>N</kbd><br>
+            <span class="sample">Tom Low</span>
+        </div>
+        <div class="key green" data-key="77">
+            <kbd>M</kbd><br>
+            <span class="sample">Hihat</span>
+        </div>
+        <div class="key green" data-key="65">
+            <kbd>A</kbd><br>
+            <span class="sample">Tom Mid</span>
+        </div><br><!-- B-A -->
+        <div class="key red" data-key="90">
+            <kbd>Z</kbd><br>
+            <span class="sample">Kick</span>
+        </div>
+        <div class="key red" data-key="88">
+            <kbd>X</kbd><br>
+            <span class="sample">Rim</span>
+        </div>
+        <div class="key red" data-key="67">
+            <kbd>C</kbd><br>
+            <span class="sample">Snare</span>
+        </div>
+        <div class="key red" data-key="86">
+            <kbd>V</kbd><br>
+            <span class="sample">Clap</span>
+        </div><!-- Z-V -->
+    </div>
+
+    <div class="samples">
+        <audio data-key="72" class="key" src="samples/ride.wav"></audio>
+        <audio data-key="74" class="key" src="samples/stick.wav"></audio>
+        <audio data-key="75" class="key" src="samples/sample1.wav"></audio>
+        <audio data-key="76" class="key" src="samples/sample2.wav"></audio>
+        <audio data-key="83" class="key" src="samples/maracas.wav"></audio>
+        <audio data-key="68" class="key" src="samples/ohihat.wav"></audio>
+        <audio data-key="70" class="key" src="samples/conga.wav"></audio>
+        <audio data-key="71" class="key" src="samples/cowbell.wav"></audio>
+        <audio data-key="66" class="key" src="samples/clave.wav"></audio>
+        <audio data-key="78" class="key" src="samples/tom1.wav"></audio>
+        <audio data-key="77" class="key" src="samples/hihat.wav"></audio>
+        <audio data-key="65" class="key" src="samples/tom2.wav"></audio>
+        <audio data-key="90" class="key" src="samples/kick.wav"></audio>
+        <audio data-key="88" class="key" src="samples/rim.wav"></audio>
+        <audio data-key="67" class="key" src="samples/snare.wav"></audio>
+        <audio data-key="86" class="key" src="samples/clap.wav"></audio>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
